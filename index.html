@@ -3,10 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Vanessa Marcos</title>
+    <title>WDD 131 – Dynamic Web Fundamentals – Vanessa Marcos</title>
+    <meta name="description"
+      content="Welcome to Vanessa Marcos' WDD 131 – Dynamic Web Fundamentals course page, where I showcase my web development projects, HTML, CSS, JavaScript skills, and my journey learning website design.">
+    <meta name="author" content="Vanessa Marcos">
+    <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
-    BYUI
-    
+    <header>
+        <a href="index.html">
+            <span>WDD 131: Dynamic Web Fundamentals</span>
+        </a>
+        <nav>
+            <a href="https://www.linkedin.com/in/vanessa-marcos-benavides-41840a44/">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/18?lang=eng&id=p9-p10#p9">Scripture</a>
+            <a href=".." target="_blank">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Vanessa Marcos</h1>
+
+        <section class="card about-card">
+            <h2>About Me</h2>
+
+            <div class="about-content">
+                <img src="images/profile.jpg" alt="Vanessa Marcos">
+                <p>
+                    My name is Vanessa Marcos, and I'm from Lima, Peru.
+                    I love being a mom. I have a little daughter, and I love
+                    spending time with her. I also love cooking, playing music,
+                    and spending time with my family.
+                </p>
+            </div>
+
+            <div class="country">
+                <h3>Peru</h3>
+                <hr>
+
+                <div class="country-content">
+                    <img src="images/peruflag.png" alt="Flag of Peru">
+                    <p>
+                        Peru is my home country. It is known for its rich history,
+                        beautiful landscapes, diverse culture, and delicious food.
+                        It is located in South America and is famous for Machu Picchu,
+                        the Amazon rainforest, and the Andes Mountains.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="card resources-card">
+            <h2>Web Dev Resources</h2>
+
+            <ul>
+                <li><a href="https://dev.to/">Dev.to Community</a></li>
+                <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com/">CSS-Tricks</a></li>
+                <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+                <li><a href="https://www.udemy.com/">Udemy</a></li>
+                <li><a href="https://picsum.photos/">Lorem Picsum</a></li>
+            </ul>
+        </section>
+</main>
+
+<footer>
+    <p>
+        &copy; <span id="currentyear"></span> Vanessa Marcos | Peru
+    </p>
+    <p id="lastModified"></p>
+</footer>
+
+    <script src="scripts/getdates.js" defer></script>
+
 </body>
 </html>
