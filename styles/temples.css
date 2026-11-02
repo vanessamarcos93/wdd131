@@ -1,0 +1,145 @@
+
+/* SMALL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #1b5e53;
+    background-color: #f5f7fa;
+}
+
+/* HEADER */
+header {
+    background-color: #1b5e53;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.brand {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.7rem;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #f0ae5e;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+/* MAIN */
+main {
+    max-width: 810px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #1b5e53;
+}
+
+.temple-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+figure {
+    background-color: white;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 0.8rem;
+}
+
+figcaption {
+    font-weight: 600;
+    color: #1b5e53;
+}
+
+/* FOOTER */
+footer {
+    background-color: #1b5e53;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    line-height: 1.8;
+}
+
+
+/* HAMBURGER MENU */
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: white;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+
+#menu::before {
+    content: "☰";
+}
+
+
+#menu.open::before {
+    content: "✕";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: #1b5e53;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.open a {
+    display: block;
+}
+
+.navigation a:hover {
+    background-color: #bbb;
+    color: #333;
+}

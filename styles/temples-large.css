@@ -1,0 +1,58 @@
+@media screen and (min-width: 600px) and (max-width: 999px){
+    .temple-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 1000px) {
+
+#menu {
+    display: none;
+}
+
+
+.navigation {
+    flex-direction: row;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.7rem 1rem;
+}
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 3rem;
+    }
+
+    .brand {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    nav {
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    nav a {
+        padding: 0.7rem 1rem;
+    }
+
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    main {
+        max-width: 1400px;
+        padding: 2rem;
+    }
+}
