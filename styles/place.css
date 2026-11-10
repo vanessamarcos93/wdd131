@@ -1,0 +1,144 @@
+:root {
+    --primary-color: #174B35;
+    --secondary-color: #43865A;
+    --accent-color: #E8B94F;
+    --background-color: #F4F0E5;
+    --text-color: #333333;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+
+/* HEADER */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+header h1 {
+    font-family: 'Bree', cursive;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* BODY */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero picture {
+    display: block;
+    width: 100%;
+}
+
+.hero-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/* DATA AND WEATHER */
+.card-data,
+.card-weather {
+    width: 90%;
+    max-width: 450px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.weather-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.8rem;
+    margin: -1.5rem -1.5rem 1rem;
+    border-radius: 10px 10px 0 0;
+}
+
+.weather-icon-desktop {
+    display: none;
+}
+
+.weather-icon-mobile {
+    display: block;
+    width: 80px;
+    height: auto;
+    margin: 0 auto 1rem;
+}
+
+.weather-header h2 {
+    color: white;
+    font-family: 'Bree', cursive;
+    font-size: 1.3rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+}
+
+.weather-icon {
+    display: block;
+    width: 80px;
+    height: auto;
+    margin: 0 auto 1rem;
+}
+
+.card-data h2 {
+    background-color: var(--primary-color);
+    color: white;
+    font-family: 'Bree', cursive;
+    font-size: 1.3rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 0.8rem;
+    margin: -1.5rem -1.5rem 1rem;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-weather {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.data-list p,
+.weather-list p {
+    margin: 0.8rem 0;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
